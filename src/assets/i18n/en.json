@@ -1,0 +1,67 @@
+{
+  "HOME": {
+    "HELLO_1": "Olá!",
+    "HELLO_2":
+      "Eu me chamo Milton Mazetto Junior e sou um desenvolvedor Front-End.",
+    "INFO_1":
+      "Tenho experiência no desenvolvimento de sistemas de gestão, aplicações para fintechs, e-commerces e blogs.",
+    "INFO_2":
+      "Minha stack inclui React/Redux, Angular 2+, Ionic, React Native e Wordpress/Woocommerce.",
+    "INFO_3": "Também tenho conhecimento em sistemas de CI, Jenkins e Docker.",
+    "INFO_4": "Para saber mais sobre mim, acesse:"
+  },
+  "PROJECTS": {
+    "TITLE": "Projetos",
+    "POPSCIENCE": {
+      "TITLE": "PopScience!",
+      "OBJECTIVE": ""
+    },
+    "OKNOTOKAY": {
+      "TITLE": "Ok Not Okay",
+      "OBJECTIVE": ""
+    },
+    "PINEAPPLE": {
+      "TITLE": "Pineapple Acessórios",
+      "OBJECTIVE": ""
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Habilidades",
+    "SUB-TITLE_1": "Desenvolvimento",
+    "SUB-TITLE_2": "Infra",
+    "SUB-TITLE_3": "Design",
+    "SKILL_1": "HTML 5",
+    "SKILL_2": "CSS 3",
+    "SKILL_3": "Javascript/ES 6",
+    "SKILL_4": "React",
+    "SKILL_5": "Redux",
+    "SKILL_6": "React Native",
+    "SKILL_7": "Angular 2+",
+    "SKILL_8": "RxJS",
+    "SKILL_9": "Ionic",
+    "SKILL_10": "NODE JS",
+    "SKILL_11": "Wordpress/Woocommerce",
+    "SKILL_12": "RESTFUL API",
+    "SKILL_13": "Docker",
+    "SKILL_14": "Jenkins",
+    "SKILL_15": "Semantic-UI/Bootstrap",
+    "SKILL_16": "Photoshop",
+    "SKILL_17": "Illustrator",
+    "SKILL_18": "Responsivo",
+    "SKILL_19": "Usabilidade"
+  },
+  "CONTACT": {
+    "TITLE": "Contato",
+    "PHONE": "+55 (11) 97065-8184",
+    "MAIL": "mazetto.milton@gmail.com",
+    "REGION_1": "Campinas",
+    "REGION_2": "São Paulo",
+    "REGION_3": "Mundo"
+  },
+  "MENU": {
+    "ITEM_1": "Sobre",
+    "ITEM_2": "Projetos",
+    "ITEM_3": "Habilidades",
+    "ITEM_4": "Contato"
+  }
+}

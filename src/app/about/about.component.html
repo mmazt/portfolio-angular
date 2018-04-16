@@ -1,0 +1,19 @@
+<div class="about_page" [ngStyle]="{'min-height': windowSize.height, 'min-width': windowSize.width}">
+  <app-estrelas *ngFor="let estrela of estrelas" [coordinates]="estrela"></app-estrelas>
+  <div class="hello_container">
+    <img class="photo" src="./assets/images/foto-pixel.jpg">
+    <div class="hello-text">{{ 'HOME.HELLO_1' | translate }}</div>
+    <div class="hello-text">{{'HOME.HELLO_2' | translate }}</div>
+  </div>
+  <div class="info_container">
+    <div class="info-text">{{ "HOME.INFO_1" | translate}}</div>
+    <div class="info-text">{{ "HOME.INFO_2" | translate}}</div>
+    <div class="info-text">{{ "HOME.INFO_3" | translate}}</div>
+    <div class="info-text">{{ "HOME.INFO_4" | translate}}</div>
+    <div class="social_icons_container">
+      <div>LINKEDIN</div>
+      <div>GITHUB</div>
+      <div>Curriculo</div>
+    </div>
+  </div>
+</div>
