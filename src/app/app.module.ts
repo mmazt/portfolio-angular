@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { EstrelasComponent } from './estrelas/estrelas.component';
 import { SkillComponent } from './skill/skill.component';
+import { NuvensComponent } from './nuvens/nuvens.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -23,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SkillsComponent,
     ContactComponent,
     EstrelasComponent,
-    SkillComponent
+    SkillComponent,
+    NuvensComponent
   ],
   imports: [
     BrowserModule,

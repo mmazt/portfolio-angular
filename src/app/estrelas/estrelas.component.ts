@@ -1,12 +1,12 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: "app-estrelas",
-  templateUrl: "./estrelas.component.html",
-  styleUrls: ["./estrelas.component.css"]
+  selector: 'app-estrelas',
+  templateUrl: './estrelas.component.html',
+  styleUrls: ['./estrelas.component.css']
 })
 export class EstrelasComponent implements OnInit {
-  @Input("coordinates") coordinates;
+  @Input('coordinates') coordinates;
   constructor() {}
 
   ngOnInit() {

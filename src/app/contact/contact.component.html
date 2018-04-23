@@ -1,3 +1,44 @@
-<p>
-  contact works!
-</p>
+<div class="contact_page" #contactPage [ngStyle]="{'min-height': windowSize.height, 'min-width': windowSize.width}">
+  <app-nuvens *ngFor="let nuvem of nuvens_1" tipo="nuvem_grande" [coordinates]="nuvem"></app-nuvens>
+  <app-nuvens *ngFor="let nuvem of nuvens_2" tipo="nuvem_pequena" [coordinates]="nuvem"></app-nuvens>
+  <app-nuvens *ngFor="let nuvem of nuvens_3" tipo="nuvem_pequena" [coordinates]="nuvem"></app-nuvens>
+  <div class="info-container">
+    <div class="title">{{'CONTACT.TITLE' | translate}}</div>
+    <div class="sub-title">{{'CONTACT.PHONE' | translate}}</div>
+    <div class="sub-title">{{'CONTACT.MAIL' | translate}}</div>
+    <div class="sub-title">{{'CONTACT.REGION_1' | translate}}</div>
+    <div class="sub-title">{{'CONTACT.REGION_2' | translate}}</div>
+    <div class="sub-title">{{'CONTACT.REGION_3' | translate}}</div>
+  </div>
+
+  <div class="image-container">
+    <div class="char-container">
+      <div class="tree">
+        <img src="/assets/images/last-page/tree.png" />
+      </div>
+      <div class="thais char">
+        <img src="/assets/images/last-page/thais.png" />
+      </div>
+      <div class="pug char">
+        <img src="/assets/images/last-page/pug.png" />
+      </div>
+      <div class="milton char">
+        <img src="/assets/images/last-page/mini-milton.png" />
+      </div>
+      <div class="flor1 char">
+        <img src="/assets/images/last-page/flor1.png" />
+      </div>
+      <div class="flor2 char">
+        <img src="/assets/images/last-page/flor2.png" />
+      </div>
+      <div class="flor3 char">
+        <img src="/assets/images/last-page/flor3.png" />
+      </div>
+    </div>
+    <div class="island-container">
+      <div class="rock-island">
+        <img src="/assets/images/last-page/rock-island.png" />
+      </div>
+    </div>
+  </div>
+</div>
