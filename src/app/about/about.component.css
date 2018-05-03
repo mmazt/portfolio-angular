@@ -64,14 +64,34 @@
 }
 
 .social_icons_container {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 80%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.social_icons {
+  font-size: 0.8rem;
+  margin: 1% 5%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+.social_icons img {
+  max-height: 40px;
+  max-width: 40px;
+}
+.social_icons a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .hello-text {
   text-align: center;
-  font-family: "Inconsolata", sans-serif !important;
+  font-family: 'Inconsolata', sans-serif !important;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.3rem;
   color: #ffffff;

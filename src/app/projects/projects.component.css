@@ -1,0 +1,40 @@
+.projects {
+  background: rgb(36, 37, 57);
+  background: -moz-linear-gradient(
+    top,
+    rgba(36, 37, 57, 1) 0%,
+    rgba(45, 48, 83, 1) 6%,
+    rgba(45, 48, 83, 1) 56%,
+    rgba(49, 51, 125, 1) 63%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(36, 37, 57, 1) 0%,
+    rgba(45, 48, 83, 1) 6%,
+    rgba(45, 48, 83, 1) 56%,
+    rgba(49, 51, 125, 1) 66%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 37, 57, 1) 0%,
+    rgba(45, 48, 83, 1) 6%,
+    rgba(45, 48, 83, 1) 56%,
+    rgba(49, 51, 125, 1) 66%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#242539', endColorstr='#31337d', GradientType=0);
+  background-size: 100%;
+  background-clip: border-box;
+  border: 0;
+  overflow-x: hidden;
+}
+.tabs {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tab-item {
+  color: #fff;
+  margin: 0 3%;
+}

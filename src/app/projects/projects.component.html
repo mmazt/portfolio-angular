@@ -1,3 +1,8 @@
-<p>
-  projects works!
-</p>
+<div class="projects" [ngStyle]="{'min-height': windowSize.height, 'min-width': windowSize.width}">
+  <div class='tabs'>
+    <div class='tab-item' *ngFor="let item of list">
+      {{'PROJECTS.' + item.id + '.TITLE' |translate}}
+    </div>
+  </div>
+
+</div>

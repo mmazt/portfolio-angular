@@ -14,15 +14,22 @@
     "TITLE": "Projetos",
     "POPSCIENCE": {
       "TITLE": "PopScience!",
-      "OBJECTIVE": ""
+      "OBJECTIVE":
+        "O mundo da ciência e da geologia de forma dinâmica e divertida!",
+      "DESCRIPTION":
+        "Fui responsável por todo o desenvolvimento do site, construído com a plataforma Wordpresscom. Foi empregado um tema adaptado as necessidades do site, com manipulação de scripts PHP e JS para aumentar as funcionalidades da plataforma."
     },
     "OKNOTOKAY": {
       "TITLE": "Ok Not Okay",
-      "OBJECTIVE": ""
+      "OBJECTIVE": "O seu guia do que vestir e do que não vestir!",
+      "DESCRIPTION":
+        "Fui responsável por todo o desenvolvimento do site e por seu deploy. Esse projeto foi construído com base na plataforma WordPress e contou com ampla utilização da plataforma WooCommerce. As funcionalidades de ecommerce tiveram de ser adaptadas a partir de scripts PHP para as necessidades do site. A parte visual foi construída a partir da personalização de um tema pré-existente e do uso de ES6."
     },
     "PINEAPPLE": {
       "TITLE": "Pineapple Acessórios",
-      "OBJECTIVE": ""
+      "OBJECTIVE": "Desrotule e encontre um estilo para todos os momentos.",
+      "DESCRIPTION":
+        "Nesse projeto fui responsável pelo desenvolvimento do front-end, com o desenvolvimento do código (HTML, CSS e jQuery) e também, participei da criação e edição de conteúdo visual (Photoshop e Illustrator)."
     }
   },
   "SKILLS": {
