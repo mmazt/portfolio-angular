@@ -98,11 +98,11 @@ export class ContactComponent implements OnInit {
     ]
   };
   public nuvens = [];
-  private windowSize = {};
+  public windowSize: { height: string; width: string };
   constructor() {
     this.windowSize = {
-      height: window.innerHeight + 'px',
-      width: window.innerWidth + 'px'
+      height: window.screen.availHeight + 'px',
+      width: window.screen.availWidth + 'px'
     };
     if (window.innerWidth >= 480) {
       this.nuvens = this.nuvemObj.desktop;

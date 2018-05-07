@@ -29,7 +29,7 @@
 }
 
 .skills-container {
-  margin: 2vh 5vw;
+  margin: 1vh 5vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -48,12 +48,37 @@ app-skill {
 
 .title {
   margin-left: 2vw;
-  margin-top: 1vh;
-  font-size: 1.2rem;
+  margin-top: 0.5vh;
+  font-size: 1rem;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .sub-title {
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 100vw;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+@media only screen and (min-width: 375px) {
+  .title {
+    margin-top: 1vh;
+    font-size: 1.2rem;
+  }
+  .sub-title {
+    font-size: 1rem;
+  }
+  .skills-container {
+    margin: 1vh 5vw;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .title {
+    margin-top: 1vh;
+    font-size: 1.2rem;
+  }
+  .sub-title {
+    font-size: 1rem;
+  }
+  .skills-container {
+    margin: 2vh 5vw;
+  }
 }

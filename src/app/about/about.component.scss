@@ -30,20 +30,21 @@
 }
 
 .photo {
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   border-radius: 50%;
   width: 15vw;
   min-width: 100px;
 }
 
 .hello_container {
-  margin-top: 3vh;
+  margin-top: 0.5vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
   padding: 1rem;
+  padding-bottom: 0;
   z-index: 1;
 }
 .info_container {
@@ -51,7 +52,7 @@
   line-height: 1.2;
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 1.5vh;
+  margin-top: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +68,7 @@
 
 .social_icons_container {
   margin: 0 auto;
-  margin-top: 3%;
+  margin-top: 2%;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -94,12 +95,12 @@
 .hello-text {
   text-align: center;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 321px) {
   .photo {
-    min-width: 140px;
+    min-width: 100px;
   }
   .hello_container {
     margin-bottom: 1.5vh;
@@ -110,16 +111,26 @@
     font-size: 1.1rem;
   }
   .social {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 @media only screen and (min-width: 450px) {
   .photo {
+    margin-bottom: 3vh;
     min-width: 150px;
   }
   .hello_container {
     margin-bottom: 3vh;
     height: 40vh;
+  }
+  .social {
+    margin-top: 3rem;
+  }
+  .social_icons_container {
+    margin-top: 3%;
+  }
+  .hello-text {
+    font-size: 1.3rem;
   }
   .info_container {
     margin-top: 2vh;

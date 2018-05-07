@@ -9,7 +9,5 @@ export class EstrelasComponent implements OnInit {
   @Input('coordinates') coordinates;
   constructor() {}
 
-  ngOnInit() {
-    console.log(this.coordinates);
-  }
+  ngOnInit() {}
 }

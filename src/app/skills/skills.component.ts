@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  public windowSize: {};
+  public windowSize: { height: string; width: string };
   public skillList = {
     dev: [
       { percent: 98, legend: '1', image: 'html' },
@@ -37,8 +37,8 @@ export class SkillsComponent implements OnInit {
 
   constructor() {
     this.windowSize = {
-      height: window.innerHeight + 'px',
-      width: window.innerWidth + 'px'
+      height: window.screen.availHeight + 'px',
+      width: window.screen.availWidth + 'px'
     };
   }
   ngOnInit() {}

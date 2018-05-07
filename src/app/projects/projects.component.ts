@@ -41,11 +41,11 @@ export class ProjectsComponent implements OnInit {
     }
   ];
   public selectedProject: { id: string; img?: string; url?: string };
-  public windowSize;
+  public windowSize: { height: string; width: string };
   constructor() {
     this.windowSize = {
-      height: window.innerHeight + 'px',
-      width: window.innerWidth + 'px'
+      height: window.screen.availHeight + 'px',
+      width: window.screen.availWidth + 'px'
     };
     this.selectedProject = this.list[0];
   }
@@ -56,6 +56,5 @@ export class ProjectsComponent implements OnInit {
     this.selectedProject = this.list.filter(item => {
       return item.id === id;
     })[0];
-    console.log(id, this.selectedProject.id);
   }
 }

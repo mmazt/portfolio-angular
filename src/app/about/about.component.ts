@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   public estrelas = [];
-  public windowSize = {};
+  public windowSize: { height: string; width: string };
   constructor() {}
 
   ngOnInit() {
     this.estrelas = this.criarEstrelas(50);
     this.windowSize = {
-      height: window.innerHeight + 'px',
-      width: window.innerWidth + 'px'
+      height: window.screen.availHeight + 'px',
+      width: window.screen.availWidth + 'px'
     };
   }
   // Função para gerar números aleatórios

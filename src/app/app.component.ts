@@ -4,20 +4,21 @@ import * as $ from 'jquery';
 import * as scrollify from 'jquery-scrollify';
 
 $(function() {
-  scrollify({
-    section: '.panel',
-    scrollbars: true,
-    overflowScroll: true,
-    before: function(i, panels) {
-      const ref = panels[i].attr('data-section-name');
+  if (window.screen.availWidth > 460) {
+    scrollify({
+      section: '.panel',
+      scrollbars: false,
+      before: function(i, panels) {
+        const ref = panels[i].attr('data-section-name');
 
-      $('.menu .active').removeClass('active');
+        $('.menu .active').removeClass('active');
 
-      $('.menu')
-        .find('a[href="#' + ref + '"]')
-        .addClass('active');
-    }
-  });
+        $('.menu')
+          .find('a[href="#' + ref + '"]')
+          .addClass('active');
+      }
+    });
+  }
 });
 
 @Component({
@@ -28,7 +29,7 @@ $(function() {
 export class AppComponent {
   constructor(translate: TranslateService) {
     const browserLang = translate.getBrowserLang();
-    // translate.use(browserLang.match(/en|pt-br/) ? browserLang : "pt");
+    // translate.use(browserLang.match(/en|pt-br/) ? browserLang : 'pt-br');
     translate.use('pt');
   }
 }
