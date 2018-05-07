@@ -1,3 +1,5 @@
+@import '~sass/variables';
+
 .nuvem_pequena {
   box-shadow: 60px 10px 0 #ffffff, 65px 10px 0 #ffffff, 70px 10px 0 #ffffff,
     75px 10px 0 #ffffff, 80px 10px 0 #ffffff, 95px 10px 0 #ffffff,
@@ -75,10 +77,10 @@
   position: absolute;
   z-index: 0;
   opacity: 0.9;
-  -webkit-animation: moveclouds 10s linear infinite;
-  -moz-animation: moveclouds 10s linear infinite;
-  -o-animation: moveclouds 10s linear infinite;
-  animation: moveclouds 10s linear infinite;
+  -webkit-animation: moveclouds $cloud_movement;
+  -moz-animation: moveclouds $cloud_movement;
+  -o-animation: moveclouds $cloud_movement;
+  animation: moveclouds $cloud_movement;
 }
 
 .nuvem_grande {
@@ -120,42 +122,42 @@
   position: absolute;
   z-index: 4;
   opacity: 0.9;
-  -webkit-animation: moveclouds 10s linear infinite;
-  -moz-animation: moveclouds 10s linear infinite;
-  -o-animation: moveclouds 10s linear infinite;
-  animation: moveclouds 10s linear infinite;
+  -webkit-animation: moveclouds $cloud_movement;
+  -moz-animation: moveclouds $cloud_movement;
+  -o-animation: moveclouds $cloud_movement;
+  animation: moveclouds $cloud_movement;
 }
 
 @-webkit-keyframes moveclouds {
   0% {
-    margin-left: -200px;
+    margin-left: $cloud_margin_start;
   }
   100% {
-    margin-left: 200px;
+    margin-left: $cloud_margin_end;
   }
 }
 @-moz-keyframes moveclouds {
   0% {
-    margin-left: -200px;
+    margin-left: $cloud_margin_start;
   }
   100% {
-    margin-left: 200px;
+    margin-left: $cloud_margin_end;
   }
 }
 @-o-keyframes moveclouds {
   0% {
-    margin-left: -250px;
+    margin-left: $cloud_margin_start;
   }
   100% {
-    margin-left: 250px;
+    margin-left: $cloud_margin_end;
   }
 }
 
 @keyframes moveclouds {
   0% {
-    margin-left: -500px;
+    margin-left: $cloud_margin_start;
   }
   100% {
-    margin-left: 500px;
+    margin-left: $cloud_margin_end;
   }
 }

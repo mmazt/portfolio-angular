@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin: 5px;
   width: 30vw;
   height: 1.1rem;
   padding: 0;
@@ -39,9 +38,7 @@
 
 .legenda {
   font-size: 1em;
-  font-family: Inconsolata, sans-serif;
-  color: white;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 .simbolo {
@@ -54,4 +51,17 @@ img {
   max-width: 11vw;
   max-height: 5.3vh;
   margin-left: -2.2vw;
+  margin-top: -0.5vh;
+}
+@media only screen and (min-width: 450px) {
+  .skills {
+    width: 25vw;
+  }
+  .legenda {
+    padding-bottom: 5px;
+  }
+  img {
+    margin-left: -1.2vw;
+    margin-top: -0.5vh;
+  }
 }

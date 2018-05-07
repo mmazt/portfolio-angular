@@ -2,30 +2,14 @@
   <div class="title">{{'SKILLS.TITLE' | translate}}</div>
   <div class="skills-container">
     <div class="sub-title">{{'SKILLS.SUB-TITLE_1' | translate}}</div>
-    <app-skill [percent]='98' legenda="1" image='html'></app-skill>
-    <app-skill [percent]='90' legenda='2' image='css3'></app-skill>
-    <app-skill [percent]='90' legenda='3' image='javascript'></app-skill>
-    <app-skill [percent]='85' legenda='4' image='angular'></app-skill>
-    <app-skill [percent]='75' legenda='5' image='ionic'></app-skill>
-    <app-skill [percent]='70' legenda='6' image='rxjs'></app-skill>
-    <app-skill [percent]='70' legenda='7' image='react'></app-skill>
-    <app-skill [percent]='70' legenda='8' image='redux'></app-skill>
-    <app-skill [percent]='60' legenda='9' image='react_native'></app-skill>
-    <app-skill [percent]='60' legenda='10' image='nodejs'></app-skill>
-    <app-skill [percent]='70' legenda='11' image='wordpress'></app-skill>
-    <app-skill [percent]='90' legenda='12' image='restful'></app-skill>
+    <app-skill *ngFor="let skill of skillList.dev" [percent]='skill.percent' [legenda]="skill.legend" [image]='skill.image'></app-skill>
   </div>
   <div class="skills-container">
     <div class="sub-title">{{'SKILLS.SUB-TITLE_2' | translate}}</div>
-    <app-skill [percent]='60' legenda="13" image='docker'></app-skill>
-    <app-skill [percent]='60' legenda='14' image='jenkins'></app-skill>
+    <app-skill *ngFor="let skill of skillList.infra" [percent]='skill.percent' [legenda]="skill.legend" [image]='skill.image'></app-skill>
   </div>
   <div class="skills-container">
     <div class="sub-title">{{'SKILLS.SUB-TITLE_3' | translate}}</div>
-    <app-skill [percent]='90' legenda="15" image='bootstrap'></app-skill>
-    <app-skill [percent]='70' legenda='16' image='photoshop'></app-skill>
-    <app-skill [percent]='65' legenda='17' image='illustrator'></app-skill>
-    <app-skill [percent]='80' legenda='18' image='responsivo'></app-skill>
-    <app-skill [percent]='70' legenda='19' image='ux'></app-skill>
+    <app-skill *ngFor="let skill of skillList.design" [percent]='skill.percent' [legenda]="skill.legend" [image]='skill.image'></app-skill>
   </div>
 </div>

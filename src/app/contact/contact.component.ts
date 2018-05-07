@@ -3,55 +3,113 @@ import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
   @ViewChild('contactPage') contactPage: ElementRef;
-  public nuvens_1 = [];
-  public nuvens_2 = [];
-  public nuvens_3 = [];
+  private nuvemObj = {
+    desktop: [
+      {
+        height: '25px',
+        width: '35px',
+        top: '5%',
+        left: '0%',
+        tipo: 'nuvem_pequena'
+      },
+      {
+        height: '15px',
+        width: '20px',
+        top: '25%',
+        left: '20%',
+        tipo: 'nuvem_grande'
+      },
+      {
+        height: '5px',
+        width: '15px',
+        top: '5%',
+        left: '25%',
+        tipo: 'nuvem_pequena'
+      },
+      {
+        height: '10px',
+        width: '35px',
+        top: '13%',
+        left: '40%',
+        tipo: 'nuvem_grande'
+      },
+      {
+        height: '30px',
+        width: '25px',
+        top: '15%',
+        left: '55%',
+        tipo: 'nuvem_pequena'
+      },
+      {
+        height: '10px',
+        width: '15px',
+        top: '3%',
+        left: '70%',
+        tipo: 'nuvem_pequena'
+      },
+      {
+        height: '20px',
+        width: '30px',
+        top: '15%',
+        left: '90%',
+        tipo: 'nuvem_grande'
+      },
+      {
+        height: '40px',
+        width: '30px',
+        top: '1%',
+        left: '110%',
+        tipo: 'nuvem_pequena'
+      },
+      {
+        height: '20px',
+        width: '30px',
+        top: '13%',
+        left: '130%',
+        tipo: 'nuvem_pequena'
+      }
+    ],
+    mobile: [
+      {
+        height: '30px',
+        width: '25px',
+        top: '15%',
+        left: '0%',
+        tipo: 'nuvem_pequena'
+      },
+      {
+        height: '10px',
+        width: '15px',
+        top: '3%',
+        left: '65%',
+        tipo: 'nuvem_pequena'
+      },
+      {
+        height: '20px',
+        width: '30px',
+        top: '15%',
+        left: '120%',
+        tipo: 'nuvem_grande'
+      }
+    ]
+  };
+  public nuvens = [];
   private windowSize = {};
   constructor() {
     this.windowSize = {
       height: window.innerHeight + 'px',
       width: window.innerWidth + 'px'
     };
+    if (window.innerWidth >= 480) {
+      this.nuvens = this.nuvemObj.desktop;
+    } else {
+      this.nuvens = this.nuvemObj.mobile;
+    }
   }
 
-  ngOnInit() {
-    this.nuvens_1 = this.criarNuvens(1, 1, 0);
-    this.nuvens_2 = this.criarNuvens(1, 0, 1);
-    this.nuvens_3 = this.criarNuvens(1, 2, 1);
-    console.log(this.contactPage);
-  }
-  // Função para gerar números aleatórios
-  randomIntBetween(a, b) {
-    return Math.floor(Math.random() * (b - a + 1) + a);
-  }
-  // Função para criar estrelas
-  criarNuvens(count, side, pos) {
-    const arr = new Array(count).fill(undefined).map(item => {
-      return {
-        height:
-          pos === 0
-            ? this.randomIntBetween(5, 20) + 'px'
-            : this.randomIntBetween(20, 40) + 'px',
-        width:
-          side === 1
-            ? this.randomIntBetween(5, 20) + 'px'
-            : this.randomIntBetween(20, 30) + 'px',
-        top:
-          pos === 0
-            ? this.randomIntBetween(1, 5) + '%'
-            : this.randomIntBetween(5, 10) + '%',
-        left:
-          side === 0
-            ? this.randomIntBetween(-20, 20) + '%'
-            : side === 1
-              ? this.randomIntBetween(20, 70) + '%'
-              : this.randomIntBetween(70, 120) + '%'
-      };
-    });
-    return arr;
-  }
+  ngOnInit() {}
 }

@@ -6,9 +6,8 @@ import * as scrollify from 'jquery-scrollify';
 $(function() {
   scrollify({
     section: '.panel',
-
-    scrollbars: false,
-
+    scrollbars: true,
+    overflowScroll: true,
     before: function(i, panels) {
       const ref = panels[i].attr('data-section-name');
 
@@ -24,7 +23,7 @@ $(function() {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   constructor(translate: TranslateService) {

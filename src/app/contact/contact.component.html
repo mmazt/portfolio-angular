@@ -1,7 +1,7 @@
 <div class="contact_page" #contactPage [ngStyle]="{'min-height': windowSize.height, 'min-width': windowSize.width}">
-  <app-nuvens *ngFor="let nuvem of nuvens_1" tipo="nuvem_grande" [coordinates]="nuvem"></app-nuvens>
-  <app-nuvens *ngFor="let nuvem of nuvens_2" tipo="nuvem_pequena" [coordinates]="nuvem"></app-nuvens>
-  <app-nuvens *ngFor="let nuvem of nuvens_3" tipo="nuvem_pequena" [coordinates]="nuvem"></app-nuvens>
+  <app-nuvens *ngFor="let nuvem of nuvens" [tipo]="nuvem.tipo" [coordinates]="nuvem"></app-nuvens>
+
+
   <div class="info-container">
     <div class="title">{{'CONTACT.TITLE' | translate}}</div>
     <div class="sub-title">{{'CONTACT.PHONE' | translate}}</div>

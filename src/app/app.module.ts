@@ -5,7 +5,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsComponent, StackList } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { EstrelasComponent } from './estrelas/estrelas.component';
@@ -25,7 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     EstrelasComponent,
     SkillComponent,
-    NuvensComponent
+    NuvensComponent,
+    StackList
   ],
   imports: [
     BrowserModule,

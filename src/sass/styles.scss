@@ -1,0 +1,17 @@
+@import './variables';
+@import './mixins';
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Lato', sans-serif !important;
+  color: #fff;
+}
+strong {
+  font-size: 0.9rem;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-weight: normal;
+}
+@media only screen and (min-width: 321px) {
+  font-size: 1.2rem;
+}

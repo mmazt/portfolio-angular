@@ -17,15 +17,11 @@
 }
 
 .title {
-  font-family: 'Inconsolata', sans-serif !important;
-  color: #ffffff !important;
   font-size: 1.5rem;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   margin-bottom: 1rem;
 }
 .sub-title {
-  font-family: 'Inconsolata', sans-serif !important;
-  color: #ffffff !important;
   font-size: 1.2rem;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
@@ -33,7 +29,7 @@
 .image-container {
   position: absolute;
   bottom: 0;
-  height: 60%;
+  height: 65%;
   width: 100%;
 }
 @media only screen and (max-width: 450px) {
@@ -56,20 +52,24 @@
   }
 
   .tree {
-    margin-bottom: -8%;
+    margin-bottom: -10%;
     margin-left: -3%;
     margin-right: 3%;
   }
 }
 
 @media only screen and (min-width: 450px) {
+  .image-container {
+    height: 65%;
+  }
   .char-container {
-    max-width: 50vw;
+    max-width: 40vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
     margin: 0 auto;
+    margin-bottom: -0.2%;
   }
   .char {
     margin-bottom: -2%;
@@ -78,6 +78,7 @@
 
   .tree {
     margin-bottom: -5%;
+    padding-bottom: 0;
     margin-left: -3%;
     margin-right: 3%;
     z-index: 10;
@@ -88,11 +89,12 @@
   max-width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   margin-top: 0;
   padding-top: 0;
+  margin-bottom: 10%;
 }
 .rock-island img {
-  min-width: 50vw;
-  max-width: 160vw;
+  min-width: 40vw;
+  max-width: 150vw;
 }

@@ -22,7 +22,6 @@
     rgba(34, 33, 38, 1) 43%,
     rgba(36, 37, 57, 1) 53%
   );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#222126', endColorstr='#242539', GradientType=0);
   background-size: 100%;
   background-clip: border-box;
   border: 0;
@@ -36,13 +35,14 @@
   width: 15vw;
   min-width: 100px;
 }
+
 .hello_container {
-  height: 40vh;
+  margin-top: 3vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 2vh;
+  margin-bottom: 1.5vh;
   padding: 1rem;
   z-index: 1;
 }
@@ -51,8 +51,7 @@
   line-height: 1.2;
   text-align: center;
   font-size: 0.9rem;
-  color: #ffffff;
-  margin-top: 3vh;
+  margin-top: 1.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,10 +61,13 @@
 .info-text {
   padding-top: 0.4rem;
 }
+.social {
+  margin-top: 1rem;
+}
 
 .social_icons_container {
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 3%;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -91,8 +93,39 @@
 
 .hello-text {
   text-align: center;
-  font-family: 'Inconsolata', sans-serif !important;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.3rem;
-  color: #ffffff;
+}
+
+@media only screen and (min-width: 321px) {
+  .photo {
+    min-width: 140px;
+  }
+  .hello_container {
+    margin-bottom: 1.5vh;
+    height: 36vh;
+  }
+  .info_container {
+    margin-top: 1.5vh;
+    font-size: 1.1rem;
+  }
+  .social {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .photo {
+    min-width: 150px;
+  }
+  .hello_container {
+    margin-bottom: 3vh;
+    height: 40vh;
+  }
+  .info_container {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+  }
+  .social {
+    margin-top: 2rem;
+  }
 }

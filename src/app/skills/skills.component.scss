@@ -24,22 +24,36 @@
     rgba(68, 101, 229, 1) 97%,
     rgba(77, 112, 249, 1) 100%
   );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#31337d', endColorstr='#3d8ee0', GradientType=0);
   background-size: 100%;
   background-clip: border-box;
 }
 
 .skills-container {
+  margin: 2vh 5vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: space-around;
   flex-wrap: wrap;
 }
 
 app-skill {
   margin: 1vh auto !important;
 }
+@media only screen and (min-width: 450px) {
+  app-skill {
+    margin: 0.5rem 2% !important;
+  }
+}
 
+.title {
+  margin-left: 2vw;
+  margin-top: 1vh;
+  font-size: 1.2rem;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
 .sub-title {
+  font-size: 1rem;
   width: 100vw;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }

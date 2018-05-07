@@ -1,8 +1,34 @@
 <div class="projects" [ngStyle]="{'min-height': windowSize.height, 'min-width': windowSize.width}">
+  <div class="title">{{'PROJECTS.TITLE' | translate}}</div>
   <div class='tabs'>
     <div class='tab-item' *ngFor="let item of list">
-      {{'PROJECTS.' + item.id + '.TITLE' |translate}}
+      <p class="project-btn" [ngClass]="item.id === selectedProject.id ? 'selected-btn' : ''" (click)="changeProject(item.id)">{{'PROJECTS.' + item.id + '.TITLE' |translate}}</p>
     </div>
   </div>
 
+  <div class='container'>
+    <div class='link-container'>
+      <div class='image-container'>
+        <a [href]="selectedProject.url" target="_blank">
+          <img [src]="'assets/images/projetos/' + selectedProject.img" />
+        </a>
+      </div>
+      <a class='link' [href]="selectedProject.url" target="_blank">{{'PROJECTS.SITE' |translate}}</a>
+    </div>
+    <div class='sub-container'>
+      <div class='project-description sub-title'>{{'PROJECTS.DESCRIPTION' |translate}}:</div>
+      <div class='project-objective'>{{'PROJECTS.' + selectedProject.id + '.DESCRIPTION' |translate}}</div>
+    </div>
+    <div class='sub-container'>
+      <div class='project-description sub-title'>{{'PROJECTS.FUNCTION' |translate}}</div>
+      <div class='project-description'>{{'PROJECTS.' + selectedProject.id + '.FUNCTION' |translate}}</div>
+    </div>
+    <div class='sub-container'>
+      <div class='project-description sub-title'>{{'PROJECTS.STACK' |translate}}</div>
+      <div class='project-description' [innerHTML]="'PROJECTS.' + selectedProject.id + '.STACK' |translate | stackList">
+      </div>
+    </div>
+
+
+  </div>
 </div>

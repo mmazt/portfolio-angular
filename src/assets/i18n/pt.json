@@ -12,24 +12,89 @@
   },
   "PROJECTS": {
     "TITLE": "Projetos",
+    "SITE": "Visitar o site",
+    "DESCRIPTION": "Descrição",
+    "FUNCTION": "Função",
+    "STACK": "Tecnologias",
     "POPSCIENCE": {
       "TITLE": "PopScience!",
-      "OBJECTIVE":
-        "O mundo da ciência e da geologia de forma dinâmica e divertida!",
-      "DESCRIPTION":
-        "Fui responsável por todo o desenvolvimento do site, construído com a plataforma Wordpresscom. Foi empregado um tema adaptado as necessidades do site, com manipulação de scripts PHP e JS para aumentar as funcionalidades da plataforma."
+      "DESCRIPTION": "Site de divulgação científica",
+      "FUNCTION": "Responsável por todo o desenvolvimento do site",
+      "STACK": [
+        {
+          "title": "Wordpress",
+          "description": "Adaptação de tema e widgets"
+        },
+        {
+          "title": "jQuery",
+          "description": "Construção de scripts para interação com usuário"
+        },
+        {
+          "title": "PHP",
+          "description": "Aumento das funcionalidades da plataforma"
+        }
+      ]
     },
     "OKNOTOKAY": {
-      "TITLE": "Ok Not Okay",
-      "OBJECTIVE": "O seu guia do que vestir e do que não vestir!",
+      "TITLE": "OkNotOkay",
       "DESCRIPTION":
-        "Fui responsável por todo o desenvolvimento do site e por seu deploy. Esse projeto foi construído com base na plataforma WordPress e contou com ampla utilização da plataforma WooCommerce. As funcionalidades de ecommerce tiveram de ser adaptadas a partir de scripts PHP para as necessidades do site. A parte visual foi construída a partir da personalização de um tema pré-existente e do uso de ES6."
+        "Site de moda com plataforma de e-commerce baseada em programa de afiliados",
+      "FUNCTION": "Responsável por todo o desenvolvimento do site e deploy",
+      "STACK": [
+        {
+          "title": "Wordpress",
+          "description": "Adaptação de tema e widgets"
+        },
+        {
+          "title": "WooCommerce",
+          "description":
+            "Aumento das funcionalidades de ecommerce com scripts PHP"
+        },
+        {
+          "title": "ES6",
+          "description": "Aumento das funcionalidades da plataforma"
+        }
+      ]
     },
     "PINEAPPLE": {
       "TITLE": "Pineapple Acessórios",
-      "OBJECTIVE": "Desrotule e encontre um estilo para todos os momentos.",
-      "DESCRIPTION":
-        "Nesse projeto fui responsável pelo desenvolvimento do front-end, com o desenvolvimento do código (HTML, CSS e jQuery) e também, participei da criação e edição de conteúdo visual (Photoshop e Illustrator)."
+      "DESCRIPTION": "Plataforma de e-commerce",
+      "FUNCTION": "Responsável pelo front-end",
+      "STACK": [
+        {
+          "title": "CSS",
+          "description": "Implementação de identidade visual do site"
+        },
+        {
+          "title": "jQuery",
+          "description": "Aumento das funcionalidades da plataforma"
+        },
+        {
+          "title": "Photoshop/Illustrator",
+          "description": "Edição do conteúdo visual"
+        }
+      ]
+    },
+    "ACRUXX": {
+      "TITLE": "Cartão Cidadão",
+      "DESCRIPTION": "Sistema de gestão de munícipios",
+      "FUNCTION":
+        "Um dos responsáveis pela implementação do front-end da aplicação. Participação na escolha do stack (React + Redux).",
+      "STACK": [
+        {
+          "title": "React",
+          "description": "Criação do front-end da aplicação"
+        },
+        {
+          "title": "Redux",
+          "description":
+            "Comunicação com API Rest e manipulação de fluxo de dados do front-end"
+        },
+        {
+          "title": "Semantic UI",
+          "description": "Desenvolvimento do aspecto visual da aplicação"
+        }
+      ]
     }
   },
   "SKILLS": {
